@@ -1,0 +1,14 @@
+const grid=document.querySelector(".grid");
+
+async function Data (){
+
+    const res = await fetch('data.json');
+ 
+    const data = await res.json();
+   
+ 
+    data.map((data)=>{
+        grid +=``
+      
+    });
+}

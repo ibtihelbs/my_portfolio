@@ -1,0 +1,213 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+:root {
+  --background: #202338;
+  --accent-color: #ec038f;
+  --white: #ffffff;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "press start 2p";
+  background-color: var(--background);
+  color: var(--white);
+  overflow-x: hidden;
+}
+ul {
+  list-style: none;
+}
+nav ul {
+  position: fixed;
+  border: 1px solid var(--accent-color);
+  width: 50px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 80px;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background: linear-gradient(
+    to top,
+    rgba(236, 3, 143, 0.1) 0%,
+    rgba(236, 3, 143, 0.9) 100%
+  );
+}
+
+ul img {
+  width: 90%;
+  height: auto;
+  background-color: rgba(236, 3, 143, 0.5);
+  padding: 0.5rem;
+  border-radius: 50%;
+  border: 1px solid var(--accent-color);
+  transition: all 1s ease-in-out;
+}
+ul img:hover {
+  background-color: rgba(236, 3, 143, 0.1);
+}
+#home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  border-top: #ccc 50px solid;
+  margin: 50px;
+  border: 20px gray solid;
+  border-top: #ccc 50px solid;
+}
+.ellipse {
+  position: absolute;
+  width: 600px;
+  transform: translate(50%, -80%);
+}
+.home-content {
+  height: 50px;
+  border: 1px red dotted;
+}
+.job-title:before {
+  content: "</Frontend ";
+  color: var(--accent-color);
+}
+.job-title:after {
+  content: ">";
+  color: var(--accent-color);
+}
+h1 {
+  font-weight: bolder;
+  font-size: 3rem;
+  color: var(--accent-color);
+  padding-top: 1rem;
+}
+#home p a {
+  text-decoration: underline;
+}
+#home button {
+  color: var(--white);
+  background-color: var(--accent-color);
+  border-color: transparent;
+  border-radius: 5px;
+  font-weight: bolder;
+  font-family: inherit;
+  padding: 0.5rem;
+  margin-top: 1rem;
+}
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.grid {
+  padding: 3.5rem;
+  display: grid;
+  grid-gap: 0.5rem;
+  grid-template-areas:
+    "first second"
+    "first third"
+    "first fourth";
+}
+
+.portfolio-items:nth-child(1) {
+  grid-area: first;
+  height: 100%;
+  width: auto;
+}
+.portfolio-items:nth-child(2) {
+  grid-area: second;
+}
+.portfolio-items:nth-child(3) {
+  grid-area: third;
+}
+.portfolio-items:nth-child(4) {
+  grid-area: fourth;
+}
+.portfolio-items {
+  position: relative;
+}
+.portfolio-items img {
+  width: 100%;
+  height: 100%;
+  border: 3px solid rgba(236, 3, 143, 0.8);
+  border-radius: 10px;
+  object-fit: fill;
+}
+.portfolio-items ul {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  border-radius: 10px;
+  background: linear-gradient(
+    to top,
+    rgba(236, 3, 143, 0.9) 0%,
+    rgba(236, 3, 143, 0) 100%
+  );
+  padding: 0.5rem;
+  display: none;
+}
+.portfolio-items:hover ul {
+  display: block;
+}
+.portfolio-items a {
+  color: white;
+}
+form {
+  width: 69%;
+}
+form > * {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 20px;
+  background-color: rgba(227, 227, 227, 0.2);
+  border: 1px solid var(--white);
+  margin-bottom: 0.5rem;
+  color: var(--white);
+  font-family: inherit;
+  font-weight: bolder;
+}
+form button {
+  background-color: var(--accent-color);
+  border-color: transparent;
+  width: 100px;
+  border-radius: 10px;
+}
+input {
+  height: 40px;
+}
+textarea {
+  height: 100px;
+}
+footer img {
+  height: 50px;
+  width: 50px;
+}
+footer ul {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.modal {
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 100000;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+}
+.box {
+  width: 80%;
+  display: flex;
+  gap: 5rem;
+}
+.box > img {
+  width: 100%;
+}

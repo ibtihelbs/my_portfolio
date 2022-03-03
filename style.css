@@ -1,8 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
 :root {
-  --background: #202338;
-  --accent-color: #ec038f;
+  --dark: #202338;
+  --accent-color: #e22f44;
   --white: #ffffff;
+  --background: #edfbfb;
 }
 * {
   margin: 0;
@@ -12,74 +13,92 @@
 
 body {
   font-family: "press start 2p";
-  background-color: var(--white);
-  color: var(--background);
+  background-color: var(--background);
+  color: #121420;
   overflow-x: hidden;
+  background-image: url("/images/floral.svg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: top right;
 }
 ul {
   list-style: none;
 }
 nav ul {
-  position: fixed;
-  border: 1px solid var(--accent-color);
-  width: 50px;
-  top: 50%;
-  transform: translateY(-50%);
-  border-radius: 80px;
   padding-top: 5rem;
   padding-bottom: 5rem;
-  background: linear-gradient(
-    to top,
-    rgba(236, 3, 143, 0.1) 0%,
-    rgba(236, 3, 143, 0.9) 100%
-  );
+
+  transform: translateX(70%);
+}
+li {
+  padding: 0.5rem;
+}
+li:hover {
+  background-color: var(--accent-color);
+  opacity: 0.6;
 }
 
-ul img {
-  width: 90%;
-  height: auto;
-  background-color: rgba(236, 3, 143, 0.5);
-  padding: 0.5rem;
-  border-radius: 50%;
-  border: 1px solid var(--accent-color);
-  transition: all 1s ease-in-out;
+a {
+  font-size: 2.5rem;
+  text-decoration: none;
+  color: var(--dark);
+  transition: all ease-in 1s;
 }
-ul img:hover {
-  background-color: rgba(236, 3, 143, 0.1);
+li:hover a {
+  padding-left: 10%;
+  opacity: 1;
 }
-#home {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  border-top: #ccc 50px solid;
-  margin: 50px;
-  border: 20px gray solid;
-  border-top: #ccc 50px solid;
-}
-.ellipse {
-  position: absolute;
-  width: 600px;
-  transform: translate(50%, -80%);
+
+.astro {
+  width: 100%;
+  transform: translateY(-30%);
+  position: relative;
+  z-index: -1;
 }
 .home-content {
-  height: 50px;
-  border: 1px red dotted;
+  position: absolute;
+  width: 240px;
+  height: 100%;
+  left: 144px;
+  top: -0;
+  background: #e22f44;
 }
-.job-title:before {
-  content: "</Frontend ";
-  color: var(--accent-color);
+.home-content h1 {
+  height: 313px;
+  width: 20%;
+  margin-left: -64px;
+  top: 180px;
+  color: var(--dark);
+  text-transform: uppercase;
+  /*! background-color: yellow; */
+  padding-top: 5rem;
+  writing-mode: vertical-lr;
 }
-.job-title:after {
-  content: ">";
-  color: var(--accent-color);
+.home-content h2 {
+  padding: 2rem;
+  color: var(--white);
+  font-size: 5rem;
+  padding-top:10rem;
+}
+.polygone{
+  position: absolute;
+}
+.polygone1{
+  right: 0;
+  bottom: -100%;
+}
+.polygone2{
+  right: 0;
+  top:125%;
 }
 h1 {
   font-weight: bolder;
   font-size: 3rem;
   color: var(--accent-color);
   padding-top: 1rem;
+}
+#contact h1, #portfolio h1{
+  color:var(--dark);
 }
 #home p a {
   text-decoration: underline;
@@ -99,6 +118,28 @@ section {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+#About {
+  width: 50%;
+  transform: translate(50%);
+  display: flex;
+  flex-direction: row;
+  color: var(--white);
+  margin-top: -40rem !important;
+  /*! padding: 10rem; */
+  margin-bottom: 20rem;
+}
+#About h1 {
+  color: var(--white);
+  writing-mode: vertical-rl;
+}
+#portfolio input {
+  background: var(--white);
+  border: 4px solid #000000;
+  box-sizing: border-box;
+  border-radius: 20px;
+  outline: none;
+  width: 69%;
 }
 .grid {
   padding: 3.5rem;
@@ -162,13 +203,14 @@ form {
 form > * {
   width: 100%;
   padding: 1rem;
-  border-radius: 20px;
-  background-color: rgba(227, 227, 227, 0.2);
-  border: 1px solid var(--white);
   margin-bottom: 0.5rem;
-  color: var(--white);
   font-family: inherit;
   font-weight: bolder;
+  background: var(--white);
+  border: 4px solid #000000;
+  box-sizing: border-box;
+  border-radius: 20px;
+  outline: none;
 }
 form button {
   background-color: var(--accent-color);
@@ -195,24 +237,33 @@ footer ul {
   background-color: rgba(0, 0, 0, 0.5);
   top: 0;
   bottom: 0;
+  left: 0;
   height: 100%;
   width: 100%;
   position: fixed;
   z-index: 100000;
   margin: auto;
-  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
   display: none;
 }
-.box {
-  width: 80%;
+.flex {
   display: flex;
-  gap: 5rem;
+}
+.box {
+  width: 90%;
+  display: flex;
+  gap: 2rem;
+}
+.info {
+  background-color: var(--white);
+  padding: 2rem;
+  width: 40%;
 }
 .box > img {
-  width: 100%;
+  width: 60%;
 }
 .icon button {
   background-color: red;
@@ -224,5 +275,7 @@ footer ul {
   position: absolute;
   justify-content: space-between;
   width: 85%;
-  background-color: yellow;
+}
+.link {
+  width: 100px !important;
 }

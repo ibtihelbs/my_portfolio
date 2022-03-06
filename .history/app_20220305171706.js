@@ -115,7 +115,9 @@ let email_js=()=>{
     message:document.getElementById('message').value,
   }
   emailjs.send('service_dyh4mg3','template_8bpi00e',email_prop).then((res)=>{
-    console.log('success',res.status);
+    console.log('success',res.stat);
   })
-}    
-document.querySelector("#submit").addEventListener("click",email_js());
+}        
+(function() {
+  emailjs.init("lZ2OLfHI4TRcJe_cY");
+  })();

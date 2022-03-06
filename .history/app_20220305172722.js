@@ -119,3 +119,6 @@ let email_js=()=>{
   })
 }    
 document.querySelector("#submit").addEventListener("click",email_js());
+(function() {
+  emailjs.init("lZ2OLfHI4TRcJe_cY");
+  })();

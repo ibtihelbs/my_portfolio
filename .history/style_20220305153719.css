@@ -55,7 +55,24 @@ li:hover a {
   position: relative;
   z-index: -1;
 }
-
+.home-content {
+  position: absolute;
+  width: 240px;
+  height: 100%;
+  left: 144px;
+  top: -0;
+}
+.home-content h1 {
+  height: 313px;
+  width: 20%;
+  margin-left: -64px;
+  top: 180px;
+  color: var(--dark);
+  text-transform: uppercase;
+  /*! background-color: yellow; */
+  padding-top: 5rem;
+  writing-mode: vertical-lr;
+}
 .home-content h2 {
   padding: 2rem;
   color: var(--white);
@@ -83,7 +100,19 @@ h1 {
 #portfolio h1 {
   color: var(--dark);
 }
-
+#home p a {
+  text-decoration: underline;
+}
+#home button {
+  color: var(--white);
+  background-color: var(--accent-color);
+  border-color: transparent;
+  border-radius: 5px;
+  font-weight: bolder;
+  font-family: inherit;
+  padding: 0.5rem;
+  margin-top: 1rem;
+}
 section {
   display: flex;
   flex-direction: column;
@@ -92,6 +121,7 @@ section {
 }
 .hidden {
   display: none;
+  width: 0;
 }
 #About {
   width: 50%;
@@ -115,13 +145,14 @@ section {
   width: 69%;
 }
 .grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2%;
+ display: flex;
+ flex-wrap:wrap;
+ gap:2%;
   padding: 5%;
 }
-.portfolio-item-wrap {
+.portfolio-item-wrap{
   flex: 1 0 30%;
+  
 }
 .portfolio-items:nth-child(1) {
   grid-area: first;

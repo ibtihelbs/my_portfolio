@@ -118,4 +118,7 @@ let email_js=()=>{
     console.log('success',res.status);
   })
 }    
-document.querySelector("#submit").addEventListener("click",email_js());
+document.querySelector("form").addEventListener("click",email_js);
+(function() {
+  emailjs.init("lZ2OLfHI4TRcJe_cY");
+  })();

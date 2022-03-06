@@ -84,6 +84,7 @@ h1 {
   color: var(--dark);
 }
 
+
 section {
   display: flex;
   flex-direction: column;
@@ -92,6 +93,7 @@ section {
 }
 .hidden {
   display: none;
+  
 }
 #About {
   width: 50%;

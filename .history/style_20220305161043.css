@@ -56,6 +56,17 @@ li:hover a {
   z-index: -1;
 }
 
+.home-content h1 {
+  height: 313px;
+  width: 20%;
+  margin-left: -64px;
+  top: 180px;
+  color: var(--dark);
+  text-transform: uppercase;
+  /*! background-color: yellow; */
+  padding-top: 5rem;
+  writing-mode: vertical-lr;
+}
 .home-content h2 {
   padding: 2rem;
   color: var(--white);
@@ -84,6 +95,7 @@ h1 {
   color: var(--dark);
 }
 
+
 section {
   display: flex;
   flex-direction: column;
@@ -92,6 +104,7 @@ section {
 }
 .hidden {
   display: none;
+  
 }
 #About {
   width: 50%;

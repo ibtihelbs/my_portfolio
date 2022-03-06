@@ -110,12 +110,10 @@ Data();
         </form> */
 let email_js=()=>{
   var email_prop = {
-    to_name:document.getElementById('name').value,
-    from_email:document.getElementById('email').value,
-    message:document.getElementById('message').value,
+    name:document.getElementById('name'),
+    email:document.getElementById('name')
   }
-  emailjs.send('service_dyh4mg3','template_8bpi00e',email_prop).then((res)=>{
-    console.log('success',res.status);
-  })
-}    
-document.querySelector("#submit").addEventListener("click",email_js());
+}        
+(function() {
+  emailjs.init("lZ2OLfHI4TRcJe_cY");
+  })();

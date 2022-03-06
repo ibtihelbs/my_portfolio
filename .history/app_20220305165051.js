@@ -102,20 +102,7 @@ async function Data (){
   
 }
 Data();
-/**<form>
-             <input type="text" placeholder="Name" id="name">
-             <input type="text" placeholder="Email" id="email">
-             <textarea  placeholder="Message" id="message"></textarea>
-             <button type="submit" id="submit">Submit</button>
-        </form> */
-let email_js=()=>{
-  var email_prop = {
-    to_name:document.getElementById('name').value,
-    from_email:document.getElementById('email').value,
-    message:document.getElementById('message').value,
-  }
-  emailjs.send('service_dyh4mg3','template_8bpi00e',email_prop).then((res)=>{
-    console.log('success',res.status);
-  })
-}    
-document.querySelector("#submit").addEventListener("click",email_js());
+/** */
+(function() {
+  emailjs.init("lZ2OLfHI4TRcJe_cY");
+  })();

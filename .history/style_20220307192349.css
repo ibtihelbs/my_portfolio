@@ -64,12 +64,12 @@ header {
 
 }*/
 .home-content {
-  width: 50%;
+  width: 40%;
 }
 .home-content h1 {
   filter: drop-shadow(1px 2px 4px var(--dark));
   color: var(--white);
-  font-size: 4rem;
+  padding: 1rem;
 }
 h1 {
   font-weight: bolder;

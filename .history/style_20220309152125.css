@@ -1,0 +1,236 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+:root {
+  --dark: #202338;
+  --accent-color: #e22f44;
+  --white: #ffffff;
+  --background: #edfbfb;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "press start 2p";
+  background-color: var(--background);
+  color: #121420;
+  overflow-x: hidden;
+  background-image: url("images/astro.svg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 95%;
+  background-position: center;
+}
+ul {
+  list-style: none;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+li {
+  padding: 0.5rem;
+}
+li:hover {
+  background-color: var(--accent-color);
+  opacity: 0.6;
+}
+
+a {
+  font-size: 2rem;
+  text-decoration: none;
+  color: var(--dark);
+  transition: all ease-in 1s;
+}
+li:hover a {
+  padding-left: 10%;
+  opacity: 1;
+}
+header {
+  padding: 2rem;
+}
+
+#side h1 {
+  color: var(--dark);
+  text-transform: uppercase;
+}
+
+#home {
+  padding: 1rem;
+}
+/*
+#About {
+
+}*/
+.home-content {
+  width: 50%;
+}
+.home-content h1 {
+  filter: drop-shadow(1px 2px 4px var(--dark));
+  color: var(--white);
+  font-size: 4rem;
+}
+.home-content h1::before {
+  
+}
+h1 {
+  font-weight: bolder;
+  font-size: 3rem;
+  color: var(--accent-color);
+  padding-top: 1rem;
+}
+#contact h1,
+#portfolio h1 {
+  color: var(--dark);
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.hidden {
+  display: none;
+}
+
+#portfolio input {
+  background: var(--white);
+  border: 4px solid #000000;
+  box-sizing: border-box;
+  border-radius: 20px;
+  outline: none;
+  width: 69%;
+}
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2%;
+  padding: 5%;
+}
+.portfolio-item-wrap {
+  flex: 1 0 30%;
+}
+
+.portfolio-items {
+  position: relative;
+}
+.portfolio-items img {
+  width: 100%;
+  height: 100%;
+  border: 3px solid rgba(236, 3, 143, 0.8);
+  border-radius: 10px;
+  object-fit: fill;
+}
+.portfolio-items:hover {
+  cursor: zoom-in;
+}
+.portfolio-items ul {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  border-radius: 10px;
+  background: linear-gradient(
+    to top,
+    rgba(236, 3, 143, 0.9) 0%,
+    rgba(236, 3, 143, 0) 100%
+  );
+  padding: 0.5rem;
+  display: none;
+}
+.portfolio-items:hover ul {
+  display: block;
+}
+.portfolio-items a {
+  color: white;
+}
+form {
+  width: 69%;
+}
+form > * {
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 0.5rem;
+  font-family: inherit;
+  font-weight: bolder;
+  background: var(--white);
+  border: 4px solid #000000;
+  box-sizing: border-box;
+  border-radius: 20px;
+  outline: none;
+}
+form button {
+  background-color: var(--accent-color);
+  border-color: transparent;
+  width: 100px;
+  border-radius: 10px;
+}
+input {
+  height: 40px;
+}
+textarea {
+  height: 100px;
+}
+footer img {
+  height: 50px;
+  width: 50px;
+}
+footer ul {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.modal {
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 100000;
+  margin: auto;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  display: none;
+}
+
+.flex {
+  display: flex;
+}
+.box {
+  width: 90%;
+  height: 90%;
+  display: flex;
+  gap: 2rem;
+}
+.info-modal {
+  width: 40%;
+  background-color: var(--white);
+  padding: 1rem;
+}
+.info {
+  background-color: var(--white);
+  padding: 2rem;
+  width: 40%;
+}
+.box > img {
+  width: 60%;
+}
+.icon button {
+  background-color: red;
+
+  top: 50%;
+}
+.icon {
+  display: flex;
+  position: absolute;
+  justify-content: space-between;
+  width: 85%;
+}
+.link {
+  width: 100px !important;
+}

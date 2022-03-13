@@ -1,0 +1,20 @@
+{
+  "title": "manage landing page",
+  "description": ["Users will be allowed to:", 
+  "View the optimal layout for the site depending on their device's screen size",
+  "See hover states for all interactive elements on the page",
+  "See all testimonials in a horizontal slider",    
+  "Receive an error message when the newsletter sign up form is submitted if not valid"
+],
+"technologies":["HTML",
+"CSS3",
+"CSS flexbox",
+"javascript",
+"ES6",
+"Wordpress"
+],
+  "src":"images/portfolio/3.png",
+  "live":"https://ibtihelbs.github.io/calculator-themeswitcher/",
+  "code":"https://github.com/ibtihelbs/calculator-themeswitcher",
+  "state":"coming-soon"   
+}

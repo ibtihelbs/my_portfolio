@@ -26,9 +26,9 @@ body {
 ul {
   list-style: none;
 }
-nav ul {
+nav {
   display: flex;
-  justify-content: right;
+  justify-content: space-between;
 }
 li {
   padding: 0.5rem;
@@ -69,7 +69,6 @@ header {
 #side {
   color: var(--accent-color);
   font-size: 5.5rem;
-  position: relative;
 }
 #side:before {
   content: "A";
@@ -114,12 +113,8 @@ header {
   display: flex;
   align-items: center;
 }
-#side::before {
-  content: "IBTIHEL BEN SALAH";
-  display: block;
-  position: absolute;
-  font-size: 2rem;
-  top: 10%;
+#side::before{
+  content
 }
 .home-content h1:nth-child(2):before {
   content: " a";

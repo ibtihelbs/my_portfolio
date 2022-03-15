@@ -122,41 +122,8 @@ Data();
     console.log('success',res.status);
   })
 }    
-
+document.querySelector("#submit").addEventListener("click",email_js());
  */
-/*let email_js=(e)=>{
-  e.preventDefault();
-  let name=getValue('name');
-  let email=getValue('email');
-  let message=getValue('message');
-  console.log(name,email,message);
-  }*/
-  const firebaseConfig = {
-    apiKey: "AIzaSyC0Z8h1PfF-gLf3vhQ_lvnNVRu5ZcKfkZU",
-    authDomain: "myportfolio-343216.firebaseapp.com",
-    projectId: "myportfolio-343216",
-    storageBucket: "myportfolio-343216.appspot.com",
-    messagingSenderId: "1043275925179",
-    appId: "1:1043275925179:web:830fa79c75295bba6fcb9e",
-    measurementId: "G-WCLDL5QT69"
-  };
-  const app = initializeApp(firebaseConfig);
-  let getValue=(element)=>{
-     return document.getElementById(element).value;
-  }
-  let saveMsg=(name, email, message)=>{
-    var newMessageRef=messageRef.push();
-    newMessageRef.set({
-      name: name,
-      email: email,
-      message:message
-    })
-  }
-document.querySelector("#submit").addEventListener("click",(e)=>{
-  e.preventDefault();
-  let name=getValue('name');
-  let email=getValue('email');
-  let message=getValue('message');
-  console.log(name,email,message);
-  });
- 
+
+
+save_M

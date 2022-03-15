@@ -140,7 +140,7 @@ Data();
     appId: "1:1043275925179:web:830fa79c75295bba6fcb9e",
     measurementId: "G-WCLDL5QT69"
   };
-  const app = initializeApp(firebaseConfig);
+
   let getValue=(element)=>{
      return document.getElementById(element).value;
   }

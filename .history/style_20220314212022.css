@@ -26,9 +26,9 @@ body {
 ul {
   list-style: none;
 }
-nav ul {
+nav ul{
   display: flex;
-  justify-content: right;
+  justify-content: space-between;
 }
 li {
   padding: 0.5rem;

@@ -26,7 +26,7 @@ body {
 ul {
   list-style: none;
 }
-nav ul {
+nav ul{
   display: flex;
   justify-content: right;
 }

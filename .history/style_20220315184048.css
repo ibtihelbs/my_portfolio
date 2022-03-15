@@ -103,9 +103,9 @@ header {
   display: block;
   position: absolute;
   font-size: 4rem;
-  padding: 1rem;
-  top: -1%;
-  color: var(--dark);
+padding: 1rem;
+top: -1%;
+color: var(--dark);
 }
 #home {
   padding: 1rem;

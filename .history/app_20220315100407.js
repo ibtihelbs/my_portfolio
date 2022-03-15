@@ -137,13 +137,12 @@ Data();
   const firebaseConfig = {
     apiKey: "AIzaSyC0Z8h1PfF-gLf3vhQ_lvnNVRu5ZcKfkZU",
     authDomain: "myportfolio-343216.firebaseapp.com",
-    databaseURL: "https://myportfolio-343216-default-rtdb.firebaseio.com",
+    databaseURL: "https://myportfolio-343216-default-rtdb.firebaseio.com/",
     projectId: "myportfolio-343216",
     storageBucket: "myportfolio-343216.appspot.com",
     messagingSenderId: "1043275925179"
   };
-  firebase.initializeApp(firebaseConfig);
-  var messageRef=firebase.database().ref('message');
+  const app = initializeApp(firebaseConfig);
   let getValue=(element)=>{
      return document.getElementById(element).value;
   }
@@ -161,6 +160,5 @@ document.querySelector("#submit").addEventListener("click",(e)=>{
   let email=getValue('email');
   let message=getValue('message');
   console.log(name,email,message);
-  saveMsg(name,email,message);
   });
  

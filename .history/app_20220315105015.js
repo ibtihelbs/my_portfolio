@@ -143,7 +143,7 @@ Data();
     messagingSenderId: "1043275925179"
   };
   firebase.initializeApp(firebaseConfig);
-  var messageRef=firebase.database().ref('message');
+  
   let getValue=(element)=>{
      return document.getElementById(element).value;
   }
@@ -161,6 +161,5 @@ document.querySelector("#submit").addEventListener("click",(e)=>{
   let email=getValue('email');
   let message=getValue('message');
   console.log(name,email,message);
-  saveMsg(name,email,message);
   });
  

@@ -5,7 +5,6 @@
   --accent-color: #ffc762;
   --white: #ffffff;
   --background: #edfbfb;
-  --background-dark: rgb(95, 153, 153) b;
 }
 * {
   margin: 0;
@@ -66,12 +65,12 @@ header {
     rgba(227, 227, 227, 0.2) 50%,
     rgba(227, 227, 227, 0.6) 100%
   );
-  filter: drop-shadow(2px 5px 10px var(--background-dark));
+  filter: drop-shadow(2px 5px 10px var(--background));
 
   /*rgb(255, 199, 98)*/
   backdrop-filter: blur(10px);
   border-radius: 1rem;
-  border: 1px solid var(--background-dark);
+  border: 1px solid var(--background);
 }
 
 .home-content h1 {
@@ -79,7 +78,6 @@ header {
   text-transform: uppercase;
   display: flex;
   align-items: center;
-  text-align: center;
 }
 .name {
   font-size: 3rem !important;
@@ -104,7 +102,7 @@ header {
   position: absolute;
   font-size: 4rem;
   padding: 1rem;
-  top: -1%;
+  top: 15%;
   color: var(--dark);
 }
 #home {

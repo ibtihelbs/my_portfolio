@@ -161,6 +161,5 @@ document.querySelector("#submit").addEventListener("click",(e)=>{
   let email=getValue('email');
   let message=getValue('message');
   console.log(name,email,message);
-  saveMsg(name,email,message);
   });
  

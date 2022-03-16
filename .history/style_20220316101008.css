@@ -19,11 +19,11 @@ body {
   background-color: var(--background);
   color: #121420;
   overflow-x: hidden;
-  /*background-image: url("images/astro.svg");
+  background-image: url("images/astro.svg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 95%;
-  background-position: center;*/
+  background-position: center;
 }
 ul {
   list-style: none;
@@ -54,13 +54,24 @@ nav li:hover a {
   opacity: 1;
 }
 header {
-  background-image: url("images/astro.svg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: 95%;
-  background-position: center;
   padding: 2rem;
-  height: 100vh;
+  margin: 3rem;
+  background: linear-gradient(
+    30deg,
+    rgba(255, 199, 98, 0.1) 50%,
+    rgba(255, 199, 98, 0.6) 100%
+  );
+  background: linear-gradient(
+    45deg,
+    rgba(227, 227, 227, 0.2) 50%,
+    rgba(227, 227, 227, 0.6) 100%
+  );
+  filter: drop-shadow(2px 5px 10px var(--background-dark));
+
+  /*rgb(255, 199, 98)*/
+  backdrop-filter: blur(10px);
+  border-radius: 1rem;
+  border: 1px solid var(--background-dark);
 }
 
 .home-content h1 {
@@ -70,7 +81,6 @@ header {
   align-items: center;
   text-align: center;
 }
-
 .name {
   font-size: 3rem !important;
   /*background-color: var(--accent-color);*/
@@ -108,7 +118,7 @@ header {
     rgba(227, 227, 227, 0.6) 100%
   );
   backdrop-filter: blur(10px);
-  width: 95%;
+  width: 50%;
   text-indent: 1rem;
   padding: 2rem;
   border-radius: 1rem;
@@ -128,39 +138,6 @@ header {
     background-color: rgba(227, 227, 227, 0.5);
 
   */
-  position: relative;
-  background: linear-gradient(
-    30deg,
-    rgba(255, 199, 98, 0.1) 50%,
-    rgba(255, 199, 98, 0.6) 100%
-  );
-  background: linear-gradient(
-    45deg,
-    rgba(227, 227, 227, 0.2) 50%,
-    rgba(227, 227, 227, 0.6) 100%
-  );
-  filter: drop-shadow(2px 5px 10px var(--background-dark));
-  /*rgb(255, 199, 98)*/
-  backdrop-filter: blur(10px);
-  border-radius: 1rem;
-  border: 1px solid var(--background-dark);
-}
-#floral_1 {
-  position: absolute;
-  width: 110%;
-  top: 0;
-  right: -50%;
-
-  animation: monFrame 5s linear 2s infinite alternate;
-}
-@keyframes monFrame {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  50% {
-    transform: rotate(2deg);
-  }
 }
 .home-content h1 {
   color: var(--dark);
@@ -413,5 +390,10 @@ footer ul {
 }
 @media (max-width: 800px) {
   body {
+    background-image: url("images/astro.svg");
+    background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 95%;
+  background-position: center;
   }
 }

@@ -61,6 +61,7 @@ header {
   background-position: center;
   padding: 2rem;
   height: 100vh;
+ 
 }
 
 .home-content h1 {
@@ -69,6 +70,7 @@ header {
   display: flex;
   align-items: center;
   text-align: center;
+  
 }
 
 .name {
@@ -128,7 +130,7 @@ header {
     background-color: rgba(227, 227, 227, 0.5);
 
   */
-  position: relative;
+  position:relative;
   background: linear-gradient(
     30deg,
     rgba(255, 199, 98, 0.1) 50%,
@@ -145,23 +147,21 @@ header {
   border-radius: 1rem;
   border: 1px solid var(--background-dark);
 }
-#floral_1 {
-  position: absolute;
-  width: 110%;
+#floral_1{
+  position:absolute;
+  width:110%;
   top: 0;
   right: -50%;
 
   animation: monFrame 5s linear 2s infinite alternate;
-}
-@keyframes monFrame {
-  0% {
-    transform: rotate(0deg);
-  }
 
-  50% {
-    transform: rotate(2deg);
-  }
-}
+	}
+	@keyframes monFrame {
+	  0%   {transform: rotate(0deg);}
+	  
+	  50%  {transform: rotate(30deg);}
+	 
+     } 
 .home-content h1 {
   color: var(--dark);
   font-size: 5rem;
@@ -413,5 +413,7 @@ footer ul {
 }
 @media (max-width: 800px) {
   body {
+   
+  
   }
 }

@@ -13,7 +13,9 @@
   box-sizing: border-box;
   line-height: 1.6;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: "Noto Serif Display";
   background-color: var(--background);

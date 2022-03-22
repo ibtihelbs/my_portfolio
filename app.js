@@ -31,7 +31,7 @@ async function Data (){
          <a class="after"><img src="images/next.svg" alt=""></a>
         </div>
         <div class="box">
-            <img src="${data.src}" alt="">
+            <img src="${data.src}" alt="" class="thumbnail">
         <div class="info-modal">
         <img class="close" src="images/close.svg" alt="">
             <h2>${data.title}</h2>

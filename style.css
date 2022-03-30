@@ -480,7 +480,7 @@ footer ul {
   }
 }
 @media(min-width:800px){
-  .About-wrap p{
-    background-color: red;
+  #About-wrap p{
+    padding-right: 30%;
   }
 }

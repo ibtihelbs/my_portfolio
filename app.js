@@ -31,7 +31,7 @@ async function Data (){
          <a class="after"><img src="images/next.svg" alt=""></a>
         </div>
         <div class="box">
-            <img src="${data.src}" alt="" class="thumbnail">
+            <img src="${data.src}" alt="">
         <div class="info-modal">
         <img class="close" src="images/close.svg" alt="">
             <h2>${data.title}</h2>
@@ -72,26 +72,22 @@ async function Data (){
     item_portfolio[0].parentNode.querySelector(".before").style.display="none";
     item_portfolio[item_portfolio.length-1].parentNode.querySelector(".after").style.display="none";
     grid.addEventListener("click",(event)=>{
-      event.preventDefault();
-      let portfolio_item = event.target.closest(".portfolio-item-wrap");
+      //event.preventDefault();
+      let portfolio_item = event.target.closest(".portfolio-item-wrap:not(li)");
       if(!portfolio_item)return;
       portfolio_item.lastChild.classList.add("flex");
+
        portfolio_item.querySelector(".before").addEventListener("click",(f)=>{
        f.stopPropagation();
        let current=grid.querySelector(".flex");
-       
        let next=current.parentNode.previousElementSibling.lastChild;
        next.classList.add("flex");
        current.classList.remove("flex");
-         
-         
       })
       portfolio_item.querySelector(".close").addEventListener("click",(ev)=>{
         ev.preventDefault();
         ev.stopPropagation();
-        //portfolio_item[index].classList.toggle("hide");
-         console.log(ev.target.parentNode.parentNode.parentNode)
-         ev.target.parentNode.parentNode.parentNode.classList.remove("flex");
+        ev.target.parentNode.parentNode.parentNode.classList.remove("flex");
       })
       portfolio_item.querySelector(".after").addEventListener("click",(g)=>{
         g.stopPropagation();
@@ -165,3 +161,15 @@ document.querySelector("#submit").addEventListener("click",(e)=>{
   saveMsg(name,email,message);
   });
  
+/**collapsing menu */
+document.querySelector(".menu").addEventListener("click",(f)=>
+
+{
+  f.preventDefault();
+  let menuid=document.getElementById('menu')
+  menuid.classList.toggle("flex");
+  menuid.addEventListener("click",(l)=>{
+    menuid.classList.remove("flex");
+  })
+}
+)

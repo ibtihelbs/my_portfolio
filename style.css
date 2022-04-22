@@ -201,6 +201,7 @@ section {
 }
 .hidden {
   display: none;
+  width:0;
 }
 
 #portfolio input {

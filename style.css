@@ -1,4 +1,6 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;400;600&family=Luckiest+Guy&display=swap');
+
 :root {
   --dark: #000000;
   --accent-color: #F2884C;
@@ -218,9 +220,11 @@ section {
   align-items: center;
   justify-content: center;
   padding: 2rem;
+  height: 100%;
 }
 .hidden {
   display: none;
+  width:0;
 }
 
 #portfolio input {
@@ -442,6 +446,7 @@ footer ul {
   nav {
     height: 50px;
   }
+
   body{
     overflow-x: hidden;
   }
@@ -451,10 +456,22 @@ footer ul {
   .contact-link{
     font-size: 1rem;
   }
+  header {
+    background-image: url("images/astro.svg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+    background-position: center;
+    /*! padding: 2rem; */
+    height: calc(100vh-50px);
+    
+    height: 100vh;
+  }
   .menu {
     display: flex;
     width: 50px;
   }
+
   #logo{
     width:50px;
   }
@@ -481,7 +498,7 @@ footer ul {
   }
   .box {
     flex-direction: column;
-    width: 60%;
+    width: 80%;
     height: auto;
     gap: 0;
   }
@@ -498,5 +515,13 @@ footer ul {
   }
   #floral_1 {
     display: none;
+  }
+  .thumbnail{
+    height: 0;
+  }
+}
+@media(min-width:800px){
+  #About-wrap p{
+    padding-right: 30%;
   }
 }

@@ -213,7 +213,8 @@ header {
 }
 .caption{
   background-color: var(--background);
-  margin-top: -8px;
+  margin-top: -8px; 
+  padding: 1rem;
 }
 section {
   display: flex;
@@ -329,6 +330,7 @@ form button {
 
 input {
   height: 40px;
+  background-color: var(--background);
 }
 textarea {
   height: 100px;

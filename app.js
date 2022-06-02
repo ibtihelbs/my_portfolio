@@ -8,6 +8,8 @@ let Move_to=(modal,index,index_,indicator)=>{
             index=index_;
             console.log("new index "+index);
 }
+
+
 async function Data (){
 
     const res = await fetch('data.json');

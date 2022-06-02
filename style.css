@@ -1,11 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+Display:wght@200;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;400;600&family=Luckiest+Guy&display=swap');
 :root {
-  --dark: #202338;
-  --accent-color: #ffc762;
+  --dark: #000000;
+  --accent-color: #F2884C;
   --white: #ffffff;
-  --background: #edfbfb;
-  --background-dark: rgb(95, 153, 153) b;
+  --background: #F1EEDB;
+  --background-dark: rgb(95, 153, 153);
 }
 * {
   margin: 0;
@@ -13,17 +12,17 @@
   box-sizing: border-box;
   line-height: 1.6;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 body {
-  font-family: "Noto Serif Display";
+  font-family: 'Dosis', sans-serif;
   background-color: var(--background);
   color: #121420;
   overflow-x: hidden;
-  /*background-image: url("images/astro.svg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: 95%;
-  background-position: center;*/
+}
+h1, h2{
+  font-family: 'Luckiest Guy', cursive;
 }
 ul {
   list-style: none;
@@ -31,13 +30,11 @@ ul {
 nav {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
+  border-bottom: 2px solid var(--dark);
 }
 nav ul {
   display: flex;
-}
-.menu {
-  display: none;
 }
 li {
   padding: 0.5rem;
@@ -46,12 +43,26 @@ button:hover,
 a:hover {
   cursor: pointer;
 }
+.btn-contact{
+  padding: .4rem 1rem;
+  transform:rotate(-10deg);
+  background-color: var(--accent-color);
+  border:3px solid var(--dark);
+  filter: drop-shadow(5px 5px 0px var(--dark));
+  font-size: 1em;
+}
+.btn-contact:hover{
+  filter: drop-shadow(0px 0px 0px var(--dark));
+  transform:translate(5px,5px) rotate(-10deg);
+
+}
 a {
-  font-size: 2rem;
+  font-size: 1rem;
   text-decoration: none;
   color: var(--dark);
   transition: all ease-in 1s;
 }
+
 nav li:hover {
   background-color: var(--accent-color);
   opacity: 0.6;
@@ -60,136 +71,147 @@ nav li:hover a {
   padding-left: 10%;
   opacity: 1;
 }
+
+h1 {
+  
+  font-size: 3rem;
+  color: var(--dark);
+  
+}
 header {
-  background-image: url("images/astro.svg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: 95%;
-  background-position: center;
-  padding: 2rem;
   height: 100vh;
 }
-
-.home-content h1 {
-  color: var(--dark);
-  text-transform: uppercase;
-  display: flex;
-  align-items: center;
-  text-align: center;
+.menu {
+  display: none;
 }
-
-.name {
-  font-size: 3rem !important;
-  /*background-color: var(--accent-color);*/
-  transform: translate(40%);
-}
-#side {
-  /*color: var(--accent-color);
-  filter: drop-shadow(1px 0px 5px #927239);*/
-  color: var(--dark);
-  font-size: 5.5rem;
-  position: relative;
-  font-weight: 900;
-}
-#side:before {
-  content: "A";
-  text-transform: uppercase;
-}
-#side::before {
-  content: "IBTIHEL BEN SALAH";
-  display: block;
+.fillers{
+  width: 100px;
   position: absolute;
-  font-size: 3rem;
-  padding: 5rem;
-  top: -13%;
-  color: var(--dark);
+  z-index: 2;
+  
 }
-#home {
-  padding: 1rem;
+.fillers:nth-child(1){
+  top:0;
+}
+.fillers:nth-child(2){
+  bottom:20%;
+  right:0;
+}
+#About{
+  border-top: 1px solid var(--dark);
+  border-bottom: 1px solid var(--dark);
+  position: relative;
+  height: 100%;
+  
 }
 #About-wrap {
-  background-color: rgba(227, 227, 227, 0.5);
-  background: linear-gradient(
-    45deg,
-    rgba(227, 227, 227, 0.2) 50%,
-    rgba(227, 227, 227, 0.6) 100%
-  );
-  backdrop-filter: blur(10px);
-  width: 95%;
-  text-indent: 1rem;
-  padding: 2rem;
-  border-radius: 1rem;
-  border: 1px solid var(--background);
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  width:65%;
+  border: 1px solid var(--dark);
+  background-color:var(--background);
 }
-
-.home-content {
-  /*background: linear-gradient(
-    to top,
-    rgba(227, 227, 227, 0.3) 50%,
-    rgba(227, 227, 227, 1) 100%
-  );
-    background-color: rgba(227, 227, 227, 0.5);
-
-  */
-  position: relative;
-  background: linear-gradient(
-    30deg,
-    rgba(255, 199, 98, 0.1) 50%,
-    rgba(255, 199, 98, 0.6) 100%
-  );
-  background: linear-gradient(
-    45deg,
-    rgba(227, 227, 227, 0.2) 50%,
-    rgba(227, 227, 227, 0.6) 100%
-  );
-  filter: drop-shadow(2px 5px 10px var(--background-dark));
-  /*rgb(255, 199, 98)*/
-  backdrop-filter: blur(10px);
-  border-radius: 1rem;
-  border: 1px solid var(--background-dark);
-}
-#floral_1 {
-  position: absolute;
-  width: 110%;
-  top: 0;
-  right: -50%;
-
-  animation: monFrame 5s linear 2s infinite alternate;
+#About-wrap p{ 
+  padding:  2rem ;
 }
 @keyframes monFrame {
   0% {
-    transform: rotate(0deg);
+    transform: translate(100%);
   }
 
-  50% {
-    transform: rotate(2deg);
+  100% {
+    transform: translate(-100%);
   }
 }
-.home-content h1 {
+@keyframes monFrame2 {
+  0% {
+    transform: translate(0);
+  }
+
+  100% {
+    transform: translate(-200%);
+  }
+}
+/*hero section*/
+.hero{
+  position: absolute;
+  width:100%;
+  z-index: -1;
+  overflow:hidden;
+  height: 100%;
+}
+.hero .scroll{
+  width:100%;
+  display:flex;
+}
+.hero .scroll div{
   color: var(--dark);
-  font-size: 5rem;
-  display: flex;
-  align-items: center;
-}
-
-.home-content h1:nth-child(2):before {
-  content: " a";
-  padding-right: 0.5rem;
-  font-size: 4.4rem;
+  font-size: 4em;
+  background-color: var(--accent-color);
+  white-space: nowrap;
   text-transform: uppercase;
-  writing-mode: vertical-rl;
+  font-family: 'Luckiest Guy', cursive;
+  animation: monFrame 4s linear infinite;
+  animation-delay: -20s;
 }
-h1 {
-  font-weight: bolder;
-  font-size: 3rem;
-  color: var(--dark);
-  padding: 3rem;
+.hero .scroll div{
+
+  animation: monFrame2 10s linear infinite;
+  animation-delay: -10s;
 }
-#contact h1,
-#portfolio h1 {
-  color: var(--dark);
+.hero .scroll div span{
+  text-shadow:
+  -2px -2px 0 var(--dark),  
+   2px -2px 0 var(--dark),
+   -2px 2px 0 var(--dark),
+    2px 2px 0 var(--dark);
+ color:var(--accent-color);
+}
+.hero .scroll.text1{
+  transform: rotate(-30deg) translateY(400px) translateX(300px);
+}
+.hero .scroll.text3{
+  transform: rotate(-15deg) translateY(-200px) translateX(-300px);
+}
+.name {
+  padding:10%;
+  height: 100%;
+  position: relative;
+}
+.contact-link{
+  position: absolute;
+  right: 10rem;
+  bottom: 15rem;
+  font-size: 3em;
+ 
+}
+.title h1{
+  font-size: 500%;
+}
+.icons{
+  width:20px !important;
+}
+.modal-trigger{
+  display: flex;
+  justify-content: space-between;
 }
 
+.modal-trigger a{
+  color: var(--dark) !important;
+}
+ .tag button{
+    font-size: 10px;
+    color: var(--dark);
+    padding: 2px 8px;
+    border-radius: 15px;
+    border:1px solid var(--dark);
+    filter: drop-shadow(1px 1px 0px var(--dark));
+}
+.caption{
+  background-color: var(--background);
+  margin-top: -8px;
+}
 section {
   display: flex;
   flex-direction: column;
@@ -202,7 +224,7 @@ section {
 }
 
 #portfolio input {
-  background: var(--white);
+
   border: 4px solid #000000;
   box-sizing: border-box;
   border-radius: 20px;
@@ -226,11 +248,13 @@ section {
   margin-bottom: 1rem;
   position: relative;
   transition: all ease-in 0.2s;
+  border:1px solid var(--dark);
+  filter: drop-shadow(5px 5px 0px var(--dark));
 }
 .portfolio-items img {
   width: 100%;
   height: 100%;
-  border-radius: 10px;
+  
   object-fit: fill;
 }
 
@@ -243,7 +267,7 @@ section {
   bottom: 0;
   width: 100%;
   height: 100%;
-  border-radius: 10px;
+  
   background-color: rgba(237, 251, 251, 0.5);
   padding: 0.5rem;
   display: none;
@@ -280,13 +304,13 @@ section {
 form {
   width: 69%;
 }
-form > * {
+form>*:not(button) {
   width: 100%;
   padding: 1rem;
   margin-bottom: 0.5rem;
   font-family: inherit;
   font-weight: bolder;
-  background: var(--white);
+  color: var(--dark);
   border: 4px solid #000000;
   box-sizing: border-box;
   border-radius: 20px;
@@ -296,8 +320,8 @@ form button {
   background-color: var(--accent-color);
   border-color: transparent;
   width: 100px;
-  border-radius: 10px;
 }
+
 input {
   height: 40px;
 }
@@ -341,9 +365,9 @@ footer ul {
 }
 .description li {
   font-size: 16px;
-  font-family: "Times New Roman", Times, serif;
   line-height: 1.6;
 }
+
 .box {
   width: 90%;
   height: 90%;
@@ -352,7 +376,7 @@ footer ul {
 }
 .info-modal {
   width: 40%;
-  background-color: var(--white);
+  background-color: var(--background);
   padding: 1rem;
   display: flex;
   flex-direction: column;
@@ -414,43 +438,45 @@ footer ul {
   right: 5%;
 }
 @media (max-width: 800px) {
+
   nav {
     height: 50px;
   }
-  header {
-    background-image: url("images/astro.svg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: 100%;
-    background-position: top;
-    /*! padding: 2rem; */
-    height: calc(100vh-50px);
-    height: ao;
-    height: auto;
+  body{
+    overflow-x: hidden;
+  }
+  .title h1 {
+    font-size: 250%;
+  }
+  .contact-link{
+    font-size: 1rem;
   }
   .menu {
     display: flex;
     width: 50px;
   }
-
-  #side {
-    font-size: 1rem;
+  #logo{
+    width:50px;
   }
-  #side::before {
-    font-size: 0.5rem;
+  .hero {
+    font-size: 2em;
   }
+  #About-wrap{
+    width:100%;
+  }
+  
   nav ul {
     flex-direction: column;
-    width: 100%;
+    width: 100% !important;
     padding-top: 200px;
     position: absolute;
     z-index: 3;
     background-color: var(--accent-color);
-    overflow: hidden;
     width: 0;
+    display: none;
   }
-
-  .grid {
+   
+  .grid {  
     flex-direction: column;
   }
   .box {

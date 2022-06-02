@@ -1,0 +1,119 @@
+[
+  {
+    "title": "calculator with theme switcher",
+    "description": ["Users will be allowed to:", 
+    "See the size of the elements adjust based on their device's screen size",
+    "Perform mathematical operations like addition, subtraction, multiplication, and division",
+    "Adjust the color theme based on their preference"],
+    "technologies": ["HTML",
+      "CSS3",
+      "CSS grid",
+      "javascript",
+      "ES6",
+      "import",
+      "Object oriented programming"],
+    "src":"images/portfolio/4.png",
+    "live":"https://ibtihelbs.github.io/calculator-themeswitcher/",
+    "code":"https://github.com/ibtihelbs/calculator-themeswitcher",
+    "state":"done"
+  },
+    {
+      "title": "Time Tracking Dashboard",
+      "description": ["Users will be allowed to:", 
+      "View the optimal layout for the site depending on their device's screen size",
+      "See hover states for all interactive elements on the page",
+      "Switch between viewing Daily, Weekly, and Monthly stats"],
+      "technologies":["HTML",
+        "CSS3",
+        "CSS Flexbox",
+        "javascript",
+        "ES6",
+        "JSON",
+        "Object oriented programming"],
+      "src":"images/portfolio/2.png",
+      "live":"https://ibtihelbs.github.io/time_tracking/index.html",
+      "code":"https://github.com/ibtihelbs/time_tracking",
+      "state":"done"
+    },
+
+    {
+      "title": "Job listings with filtering",
+      "description": ["Users will be allowed to:",   
+      "View the optimal layout for the site depending on their device's screen size",
+      "See hover states for all interactive elements on the page",
+      "Filter job listings based on the categories selected"
+],
+      "technologies":["HTML",
+        "CSS3",
+        "CSS Flexbox",
+        "javascript",
+        "ES6",
+        "json",
+        "Object oriented programming"],
+      "src":"images/portfolio/1.png",
+      "live":"https://ibtihelbs.github.io/static-job/",
+      "code":"https://github.com/ibtihelbs/static-job",
+      "state":"done"
+    },
+    {
+      "title": "product detail page",
+      "description": ["Users will be allowed to:",   
+        "View the cart and remove items from it",
+        "Add items to the cart",
+        "Open a lightbox gallery by clicking on the large product image",
+        "Switch the large product image by clicking on the small thumbnail images"
+    ],
+      "technologies":["HTML",
+        "CSS3",
+        "CSS Flexbox",
+        "javascript",
+        "ES6"],
+      "src":"images/portfolio/5.png",
+      "live":"https://ibtihelbs.github.io/ecommerce-products-detail/",
+      "code":"https://github.com/ibtihelbs/ecommerce-products-detail",
+      "state":"done"
+    },
+    {
+      "title": "Interactive comments section",
+      "description": ["Users will be allowed to:",   
+      "View the optimal layout for the app depending on their device's screen size",
+      "See hover states for all interactive elements on the page",
+      "Create, Read, Update, and Delete comments and replies",
+      "Upvote and downvote comments"
+],
+      "technologies":["HTML",
+        "CSS3",
+        "CSS Flexbox",
+        "javascript",
+        "ES6",
+        "import",
+        "crud app",
+        "slide",
+        "Object oriented programming"],
+      "src":"images/portfolio/6.png",
+      "live":"https://ibtihelbs.github.io/interactive/",
+      "code":"https://github.com/ibtihelbs/interactive",
+      "state":"coming-soon"
+    },
+    {
+      "title": "API: countries with theme switcher",
+      "description": ["Implemented e-commerce product detail that enables users to :",
+
+      "Get information about their purchases  (quantity, discount, total ...) in real-time.",
+      "Open a lightbox gallery",
+      "Add items to their card"
+    ],
+      "technologies":["HTML",
+        "CSS3",
+        "CSS Flexbox",
+        "javascript",
+        "ES6",
+        "CSS grid"
+      ],
+      "src":"images/portfolio/5.png",
+      "live":"https://ibtihelbs.github.io/ecommerce-products-detail/",
+      "code":"https://github.com/ibtihelbs/REst_api_country/",
+      "state":"done"
+    }
+    
+  ]

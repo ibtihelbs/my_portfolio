@@ -24,6 +24,13 @@ async function Data (){
             <li><a href="${data.live}"><img class="link" src="images/link-solid.svg"></a></li>
             <li><a href="${data.code}"><img class="link" src="images/github-brands.svg"></a></li>
         </ul>
+        <div class="caption">
+         <h3>${data.title}</h3>
+         <div class="tag tag-card">${(data.technologies.map(function(item){ return "<button>"+item+"</button>"}).join(" "))}</div>
+         <div class="modal-trigger">
+         <a href="#">Add more details ....</a> <img class="icons" src="images/Arrow.png" />
+         </div>
+         </div>
       </div>
       <div class="modal">
         <div class="icon">
@@ -72,26 +79,22 @@ async function Data (){
     item_portfolio[0].parentNode.querySelector(".before").style.display="none";
     item_portfolio[item_portfolio.length-1].parentNode.querySelector(".after").style.display="none";
     grid.addEventListener("click",(event)=>{
-      event.preventDefault();
-      let portfolio_item = event.target.closest(".portfolio-item-wrap");
+      //event.preventDefault();
+      let portfolio_item = event.target.closest(".portfolio-item-wrap:not(li)");
       if(!portfolio_item)return;
       portfolio_item.lastChild.classList.add("flex");
+
        portfolio_item.querySelector(".before").addEventListener("click",(f)=>{
        f.stopPropagation();
        let current=grid.querySelector(".flex");
-       
        let next=current.parentNode.previousElementSibling.lastChild;
        next.classList.add("flex");
        current.classList.remove("flex");
-         
-         
       })
       portfolio_item.querySelector(".close").addEventListener("click",(ev)=>{
         ev.preventDefault();
         ev.stopPropagation();
-        //portfolio_item[index].classList.toggle("hide");
-         console.log(ev.target.parentNode.parentNode.parentNode)
-         ev.target.parentNode.parentNode.parentNode.classList.remove("flex");
+        ev.target.parentNode.parentNode.parentNode.classList.remove("flex");
       })
       portfolio_item.querySelector(".after").addEventListener("click",(g)=>{
         g.stopPropagation();
@@ -165,3 +168,15 @@ document.querySelector("#submit").addEventListener("click",(e)=>{
   saveMsg(name,email,message);
   });
  
+/**collapsing menu */
+document.querySelector(".menu").addEventListener("click",(f)=>
+
+{
+  f.preventDefault();
+  let menuid=document.getElementById('menu')
+  menuid.classList.toggle("flex");
+  menuid.addEventListener("click",(l)=>{
+    menuid.classList.remove("flex");
+  })
+}
+)

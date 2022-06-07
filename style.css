@@ -48,7 +48,6 @@ a:hover {
 }
 header{
   background-image: url('images/computer.png');
-  background-repeat: no-repeat;
   background-size: 30%;
 }
 .btn-contact{

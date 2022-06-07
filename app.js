@@ -40,7 +40,7 @@ async function Data (){
          <a class="after"><img src="images/next.svg" alt=""></a>
         </div>
         <div class="box">
-            <img src="${data.src}" alt="">
+        <img src="${data.src}" alt="">    
         <div class="info-modal">
         <img class="close" src="images/close.svg" alt="">
             <h2>${data.title}</h2>
@@ -49,13 +49,15 @@ async function Data (){
             <ul>${(data.description.map(function(item){ return "<li>"+item+"</ul>"}).join(" "))}</ul>
             </div>
             <div class="modal-links">
-            <a href="${data.live}"><img src="images/GitHub.svg" alt=""></a>
-            <a href="${data.code}"><img src="images/GitHub.svg" alt=""></a></div>
+            <a href="${data.live}"><img src="images/gitHub.png" alt=""></a>
+            <a href="${data.code}"><img src="images/gitHub.png" alt=""></a></div>
+            
         </div>
         </div>
         
         
         </div>`;
+        /*<img src="${data.src}" alt="">*/
         let item_portfolio=document.querySelectorAll(".portfolio-items");
         //console.log(item_portfolio);
         return{tech: data.technologies}

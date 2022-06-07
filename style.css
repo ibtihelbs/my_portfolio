@@ -87,7 +87,7 @@ h1 {
   
 }
 header {
-  height: 100vh;
+  /* height: 100vh; */
 }
 .menu {
   display: none;
@@ -96,13 +96,12 @@ header {
   width: 100px;
   position: absolute;
   z-index: 2;
-  
 }
 .fillers:nth-child(1){
-  top:0;
+  top: -90px;
 }
 .fillers:nth-child(2){
-  bottom:20%;
+  bottom: 0%;
   right:0;
 }
 #About{
@@ -184,15 +183,25 @@ header {
 }
 .name {
   padding:10%;
-  height: 100%;
+  /* height: 100%; */
   position: relative;
+  /* background-color: rebeccapurple; */
 }
 .contact-link{
   position: absolute;
-  right: 10rem;
-  bottom: 15rem;
+  right: 0rem;
+  
+   bottom: -5%; 
   font-size: 3em;
- 
+}
+.title{
+  background-color: var(--background);
+}
+
+.title {
+    padding: 1rem;
+    border: 3px solid var(--dark);
+    filter: drop-shadow(8px 8px 0px var(--dark));
 }
 .title h1{
   font-size: 500%;
@@ -341,10 +350,7 @@ textarea {
   height: 100px;
   background-color: var(--background);
 }
-footer img {
-  height: 50px;
-  width: 50px;
-}
+
 footer ul {
   display: flex;
   justify-content: center;
